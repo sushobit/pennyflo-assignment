@@ -1,0 +1,31 @@
+/* App.css */
+
+  
+  .HomepageContainer {
+    display: flex;
+    flex-direction: row;
+    background-image: url('./image.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+    
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .HomepageContainer {
+      width: max-content;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+  .HomepageContainer {
+    width: max-content;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .HomepageContainer {
+    width: max-content;
+  }
+}

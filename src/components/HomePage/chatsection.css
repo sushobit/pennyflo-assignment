@@ -1,0 +1,149 @@
+.chat-section {
+    background-color: aliceblue;
+    opacity: 0.9;
+    padding: 20px;
+    font-size: larger;
+    font-family: cursive;
+    border-radius: 10%;
+    margin-left: 10px;
+    width: 1100px;
+}
+
+.chat-section-head {
+    font-weight: 900;
+    color: brown;
+    text-align: center;
+}
+.messages {
+    margin: 20px;
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+  }
+
+.message {
+    animation: fadeIn 1s ease-in-out forwards; 
+    background-color: aqua;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: max-content;
+}
+
+.sent-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+.sent-message {
+    text-align: right;
+    background-color: rgb(89, 163, 163);
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 200px;
+}
+.message-content {
+    text-align: left;
+    font-weight: 600;
+}
+.message-timestamp {
+    text-align: right;
+    font-weight: 300;
+    font-size: small;
+}
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .input-section input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  .input-section button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-section button:hover {
+    background-color: #45a049;
+  }
+  
+
+  @media only screen and (max-width: 768px) {
+    .chat-section {
+        margin: 10px;
+        width: 110px;
+        padding: 0px;
+    }
+    .chat-section-head {
+        font-size: small;
+    }
+    .message {
+        font-size: 6px;
+        width: 70%;
+        padding: 2px;
+        margin: 9px;
+    }
+
+    .messages {
+        margin: 10px;
+    }
+
+    .sent-message {
+        font-size: 6px;
+        width: 70%;
+        padding: 7px;
+        margin: 9px;
+    }
+    .message-content {
+        font-size: 8px;
+    }
+    .message-timestamp {
+        font-size: 4px;
+    }
+
+    .input-section {
+        width: 10px;
+        padding: 0%;
+        margin: 0%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    .input-text {
+        font-size: 2px;
+        height: 10px;
+        width: 50px;
+    }
+    .input-section button {
+        padding: 2px;
+        font-size: small;
+    }
+}

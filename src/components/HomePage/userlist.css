@@ -1,0 +1,62 @@
+.user-list {
+    background-color: aliceblue;
+    opacity: 0.9;
+    padding: 20px;
+    font-size: larger;
+    font-family: cursive;
+    border-radius: 10%;
+    width: 600px;
+}
+.user-list-head {
+    font-weight: 900;
+    color: brown;
+    text-align: center;
+}
+
+.User-list-items {
+    padding: 20px;
+    font-weight: 900;
+    font-size: larger;
+    color: rgb(64, 64, 6);
+    transition: all 0.3s ease;
+    width: max-content;
+    border-radius: 20px;
+    animation: fadeIn 1s ease-in-out forwards; 
+}
+.User-list-items:hover {
+    color: rgb(78, 131, 244);
+    background-color: rgb(73, 40, 40);
+    width: max-content;
+    border-radius: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .user-list {
+        padding: 0px;
+        font-size: 5px;
+        width: fit-content;
+    }
+    .User-list-items {
+        padding: 10px;
+        padding-left: 4px;
+        font-size: 7px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .user-list {
+        padding: 0px;
+        font-size: 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.9;
+    }
+  }
